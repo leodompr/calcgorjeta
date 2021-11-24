@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon calc.png">
+  
+  <title>Calculadora Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+        <!-- TITULO -->
+    <h1><strong>CALCULADORA DE GORJETAS</strong></h1>
+  </header>
+  <main>
+    <div class="container">
+      <div>
+        <div class="input">
+          <div class="label">Calcule</div>
+          <div>
+            <img src="./images/REAL_Prancheta 1.png" alt="dollar-icon" class="icon">
+            <input type="text"  id="bill" placeholder="0">
+          </div>
+        </div>
+          <!-- BOTÕES -->
+        <div class="input">
+          <div class="label">Selecione a Porcentagem</div>
+          <div class="tip-buttons">
+            <a>5%</a>
+            <a>10%</a>
+            <a class="tip-active" id="default-tip">15%</a>
+            <a>25%</a>
+            <a>50%</a>
+            <input type="text" id="custom-tip" placeholder="Outro">
+          </div>
+        </div>
+
+        <div class="input no-margin-bottom">
+          <div class="label">Número de Pessoas</div>
+          <div>
+            <img src="images/icon-person.svg" alt="person-icon" class="icon">
+            <input type="text" id="people" placeholder="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="output">
+
+        <div class="result">
+          <div class="result-text">
+            Valor da Gorjeta<br />
+            <span>/ pessoa</span>
+          </div>
+          <div class="result-value" id="tipPerPerson">
+            R$0.00
+          </div>
+        </div>
+
+        <div class="result">
+          <div class="result-text">
+            Total<br />
+            <span>/ pessoa</span>
+          </div>
+          <div class="result-value" id="totalPerPerson">
+            R$0.00
+          </div>
+        </div>
+
+        <a id="reset">LIMPAR</a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <address>
+        Coded by <a href="mailto:leodomiings@icloud.com">Leonardo Domingues</a>.
+        <!-- COLOCAR MEU NOME E CONTATO. -->
+      </address>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
